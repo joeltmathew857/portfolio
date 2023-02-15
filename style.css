@@ -1,7 +1,4 @@
-img{
-    width: 300px;
-    height: 300px;
-}
+
 :root{
     --purple:#2f192e;
     --purple-light:#30192d;
@@ -33,19 +30,150 @@ body{
     width: 100%;
     flex-wrap: wrap;
     position: relative;
-    background: #6c6a6e;
+    background-color: #30192d;
 }
 .profile-card{
-    background: #ffffff11;
+    background: #1b1a1a;
     width: 400px;
     padding: 3rem;
     border-radius: 10px;
     min-height: 400px;
     position: relative;
-    color: #4cb0b4;
+    color: #ffffff;
     margin: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+}
+
+.profile-card .profile-pic{
+    margin-top:15px;
+    overflow: hidden;
+}
+.profile-card .profile-pic img{
+    width: 300px;
+    height: 300px;  
+    border-radius: 10px; 
+
+}
+.profile-card .profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+}
+.profile-details .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-details .intro h2{
+    margin-top: 20px;
+}
+.profile-details .intro h4{
+background: #2d2b2b;
+font-weight: 400;
+border-radius: 4px;
+padding: 5px 10px;
+margin: 8px;
+
+}
+.profile-details .intro .social{
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+.profile-details .intro .social i{
+    color: #1d1d1d;
+    font-size: 16px;
+    background-color: #363434;
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+.profile-details .intro .social i:hover{
+    transform: scale(1.2);
+    border: 1px soild rgba(255, 255, 255, 0.3);
+}
+.profile-details .contact-info{
+    background-color: #1b1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+.profile-details .contact-info .row{
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+padding: 10px 0;
+margin-bottom: 10px;
+
+}
+.contact-info .row .icon{
+height: 40px;
+width: 40px;
+line-height: 40px;
+border-radius: 5px;
+background-color: #111;
+text-align: center;
+color: #ffff;
+transition: 0.5s;
+
+}
+.row .icon:hover{
+    transform: scale(1.2);
+    border: 1px soild rgba(255, 255, 255, 0.2);
+
+}
+.row .content{
+    min-width: 70%;
+}
+.row .content span{
+    font-size: 12px;
+
+}
+.download-btn{
+    background: linear-gradient(45deg,#f64c57,#e21b5a);
+    color: #ffffff;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    border: none;
+
+}
+.about{
+    background-color: #111;
+    max-width: 800px;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+.about h1{
+    color: #f2f2f2;
+    margin-bottom: 1.1rem;
+    position: relative;
+    display: inline-block;
+    font-size: 3.5rem;
+}
+.about h1::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -50%;
+    width: 45%;
+    height: 3px;
+    background: linear-gradient(45deg, #f64c57, #e21b5a);
+}
+.about p{
+    color: #555;
+    margin: 1.5rem 0;
 }
